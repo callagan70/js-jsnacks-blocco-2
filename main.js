@@ -1,14 +1,13 @@
-let prima = prompt ("inserisci prima parola").length
-let seconda = prompt ("inserisci seconad parola").length
+// SECTION - Snack1 - Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
-console.log (prima)
-console.log (seconda)
+let x = parseInt  (prompt("Inserisci nummero"));
 
-if (prima > seconda){
-  document.getElementById("fuori").innerHTML = "La prima parola è più lunga della seconda"
-
+if (x % 2 == 0) {
+document.getElementById("fuori").innerHTML = x
 }
-
 else {
-  document.getElementById("fuori").innerHTML = "La seconda parola è più lunga della prima"
+console.log(x);
+alert ("Sbagliato")
+document.getElementById("fuori").innerHTML = "Sbagliato"
 }
+
