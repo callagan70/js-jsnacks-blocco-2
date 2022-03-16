@@ -1,7 +1,7 @@
 // // SECTION - Snack1 - Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
 let x = parseInt  (prompt("Inserisci nummero"));
-    console.log(x)
+    // console.log(x);
 
 // if (isNaN(x)) {
 //   alert("Not a Number!");
@@ -11,7 +11,7 @@ if (x % 2 == 0) {
 document.getElementById("numero").innerHTML = `Il numero ${x} è pari!`;
 }
 else {
- console.log(x);
+//  console.log(x);
  alert ("Sbagliato")
  document.getElementById("numero").innerHTML = `Il numero ${x} non è pari!`;
  }
@@ -38,19 +38,25 @@ else {
  for (i = 1; i<=z; i++ ){
 
    let k =  Math.floor (Math.random( ) * 100 + 1 )
-   console.log(k)
+  //  console.log(k)
 
   k = array.push(k);}
+
  var x1 = 0
  console.log(`Array ${array}`)
 
  for (i = 0; i < array.length; i++){
 
-  if (array[i] % 2 == 0) {
+  if (i % 2 == 0) {
   console.log(`Array ${array[i]} pari`)
    }
    else {
      x1 += array[i]
      console.log(`Valore x1 ${x1}`)
    }
+  //  document.getElementById("sommArray").innerHTML = "Somma Array:" + x1
  }
+ document.getElementById("sommArray").innerHTML = `Somma Array: ${x1}`
+// !SECTION
+
+
